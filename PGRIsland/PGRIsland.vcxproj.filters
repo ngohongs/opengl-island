@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{1c4c55d9-f505-43bb-9be5-4d5a0519a2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{f26ff779-8c54-4d9f-9e67-2c9a6dea22fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{103070e7-d75f-4a40-b898-d1ed3cfe61bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\stb_image">
+      <UniqueIdentifier>{f8c49fb6-e426-4cc2-9dc1-be3667826259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SceneNodes">
+      <UniqueIdentifier>{89537418-291f-4228-b99b-d45ea89d4b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SceneNode">
+      <UniqueIdentifier>{011f5e14-bae3-4307-9cd0-de091a6b761d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\stb_image.cpp">
+      <Filter>Dependencies\stb_image</Filter>
+    </ClCompile>
+    <ClCompile Include="source\plane.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="source\planeOrtho.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="source\sphere.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cube.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCatmulRomSpline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CGameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CMeshGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CWaterPlaneSceneNode.cpp">
+      <Filter>Source Files\SceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSceneNode.cpp">
+      <Filter>Source Files\SceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSkyboxSceneNode.cpp">
+      <Filter>Source Files\SceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CBillboardSceneNode.cpp">
+      <Filter>Source Files\SceneNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSplineSceneNode.cpp">
+      <Filter>Source Files\SceneNodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\stb_image.h">
+      <Filter>Dependencies\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\plane.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\planeOrtho.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sphere.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cube.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CMaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CMeshGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CShaderProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCatmulRomSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CGameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSkyboxSceneNode.h">
+      <Filter>Header Files\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSceneNode.h">
+      <Filter>Header Files\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSplineSceneNode.h">
+      <Filter>Header Files\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CBillboardSceneNode.h">
+      <Filter>Header Files\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CWaterPlaneSceneNode.h">
+      <Filter>Header Files\SceneNode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\SFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SLightFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SSkyboxFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SSkyboxVertexShader.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\STextureFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SVertexShader.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SWaterFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SWaterGeometryShader.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SWaterVertexShader.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SBannerFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SExplosionFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\SFireFragmentShader.frag">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

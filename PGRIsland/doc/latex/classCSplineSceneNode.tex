@@ -1,0 +1,85 @@
+\hypertarget{classCSplineSceneNode}{}\doxysection{C\+Spline\+Scene\+Node Class Reference}
+\label{classCSplineSceneNode}\index{CSplineSceneNode@{CSplineSceneNode}}
+
+
+{\ttfamily \#include $<$C\+Spline\+Scene\+Node.\+h$>$}
+
+
+
+Inheritance diagram for C\+Spline\+Scene\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCSplineSceneNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Spline\+Scene\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCSplineSceneNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCSplineSceneNode_ad872c8ed566df2f5f21c499f215819cc}{C\+Spline\+Scene\+Node}} (const \mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} \&program, const \mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}} \&spline, const float \&slow)
+\item 
+void \mbox{\hyperlink{classCSplineSceneNode_ae5089c2aeb85eab2828a4dbb39bfa8e4}{Update}} (const float \&delta\+Time) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Scene node that moves along a Catmul-\/\+Rom spline 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCSplineSceneNode_ad872c8ed566df2f5f21c499f215819cc}\label{classCSplineSceneNode_ad872c8ed566df2f5f21c499f215819cc}} 
+\index{CSplineSceneNode@{CSplineSceneNode}!CSplineSceneNode@{CSplineSceneNode}}
+\index{CSplineSceneNode@{CSplineSceneNode}!CSplineSceneNode@{CSplineSceneNode}}
+\doxysubsubsection{\texorpdfstring{CSplineSceneNode()}{CSplineSceneNode()}}
+{\footnotesize\ttfamily C\+Spline\+Scene\+Node\+::\+C\+Spline\+Scene\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} \&}]{program,  }\item[{const \mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}} \&}]{spline,  }\item[{const float \&}]{slow }\end{DoxyParamCaption})}
+
+Constructor for a spline node
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & -\/ program used for drawing the object \\
+\hline
+{\em spline} & -\/ spline along which the object moves \\
+\hline
+{\em slow} & -\/ slow coeficient for slowing the animatiom \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSplineSceneNode_ae5089c2aeb85eab2828a4dbb39bfa8e4}\label{classCSplineSceneNode_ae5089c2aeb85eab2828a4dbb39bfa8e4}} 
+\index{CSplineSceneNode@{CSplineSceneNode}!Update@{Update}}
+\index{Update@{Update}!CSplineSceneNode@{CSplineSceneNode}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Spline\+Scene\+Node\+::\+Update (\begin{DoxyParamCaption}\item[{const float \&}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function
+
+handles time change so that the object moves
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & -\/ time delta from last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classCSceneNode_a12e77d2875504420ded9349d6573422c}{C\+Scene\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CSplineSceneNode_8h}{C\+Spline\+Scene\+Node.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CSplineSceneNode_8cpp}{C\+Spline\+Scene\+Node.\+cpp}}\end{DoxyCompactItemize}

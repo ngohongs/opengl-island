@@ -1,0 +1,244 @@
+\hypertarget{structCGameState}{}\doxysection{C\+Game\+State Struct Reference}
+\label{structCGameState}\index{CGameState@{CGameState}}
+
+
+{\ttfamily \#include $<$C\+Game\+State.\+h$>$}
+
+
+
+Collaboration diagram for C\+Game\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCGameState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCGameState_ab78c5faec18858b9915daa475c5393fb}{C\+Game\+State}} ()
+\item 
+void \mbox{\hyperlink{structCGameState_a8b29fb43c8439fc6cdd36268cff7f233}{Initialize\+Game}} ()
+\item 
+glm\+::mat4 \mbox{\hyperlink{structCGameState_af3d57782dd67bf7cf578eb2972dc20b4}{Get\+View\+Matrix}} ()
+\item 
+glm\+::mat4 \mbox{\hyperlink{structCGameState_a7601738c3ad88a8438b10d2735c980ff}{Get\+Projection\+Matrix}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structCGameState_a3f552414e3df0d2976533d4587a7894e}{M\+Day}} = true
+\item 
+\mbox{\hyperlink{structCLight}{C\+Light}} \mbox{\hyperlink{structCGameState_a5337651368396d69964ff3cc072333ea}{light}} = \mbox{\hyperlink{HConstants_8h_a50549b63a241b4b9ae1647a7639f44c7}{C\+A\+M\+P\+F\+I\+R\+E\+\_\+\+L\+I\+G\+HT}}
+\item 
+\mbox{\hyperlink{structCLight}{C\+Light}} \mbox{\hyperlink{structCGameState_a58e5b8ddfad137f8987ed0ad7b01b76f}{dir\+Light}} = \mbox{\hyperlink{HConstants_8h_a64a45b62c7718281dcefec32550f5f07}{D\+A\+Y\+\_\+\+L\+I\+G\+HT}}
+\item 
+int \mbox{\hyperlink{structCGameState_a46e386ef0763240c7aaf108c24fa8f00}{M\+View}} = -\/1
+\item 
+int \mbox{\hyperlink{structCGameState_ae5e0080cd7ddd08f331d2ddb170acc5d}{M\+Last\+Frame\+Time}} = 0
+\item 
+float \mbox{\hyperlink{structCGameState_a294584ee09ddc4c38a4690efd1cbd0ac}{M\+Time\+Delta}} = 0.\+0f
+\item 
+\mbox{\hyperlink{structCCamera}{C\+Camera}} \mbox{\hyperlink{structCGameState_a26953981eaa322a3daa8e122da3f282b}{M\+Camera}}
+\item 
+bool \mbox{\hyperlink{structCGameState_a67ef382a4f6e2bcefc021ee5fa05466a}{M\+Key\+Map}} \mbox{[}K\+E\+Y\+S\+\_\+\+C\+O\+U\+NT\mbox{]}
+\item 
+int \mbox{\hyperlink{structCGameState_a53d1f2d8907448d40209bbc79db0d105}{M\+Holding}} = -\/1
+\item 
+int \mbox{\hyperlink{structCGameState_aad0cf4ca112402cd0db242436ff34130}{M\+Window\+Width}}
+\item 
+int \mbox{\hyperlink{structCGameState_a6a83c0926c7afffd1c722182b5be53bb}{M\+Window\+Height}}
+\item 
+bool \mbox{\hyperlink{structCGameState_a29d6f0890a21b2cf78a715d0f8d32ccf}{M\+Free\+Camera}} = false
+\item 
+bool \mbox{\hyperlink{structCGameState_a892b2f00cda704434d5967807d2ef842}{M\+Camera\+Control}} = true
+\item 
+\mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}} \mbox{\hyperlink{structCGameState_a0b340835f6604c099ec53984f4d036e0}{M\+Camera\+Spline}} = \mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}}(\mbox{\hyperlink{HConstants_8h_a19b9d3199d38f1018bbb7be2059d30a7}{C\+A\+M\+E\+R\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+TS}})
+\item 
+float \mbox{\hyperlink{structCGameState_a6c9ead730570535da59e12ecde86c6f7}{M\+Spline\+Time}} = 0.\+0f
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ \mbox{\hyperlink{structCGameState_a674dd7d13bc749e23e31c3bf73c1c228}{M\+Root}} = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}}$>$()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ \mbox{\hyperlink{structCGameState_a1b027286ff00df5c9d877bc29819ada6}{M\+Ship}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game state struct
+
+handles all models initializations and shader program initializations and overall classes that help in drawing a scene 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structCGameState_ab78c5faec18858b9915daa475c5393fb}\label{structCGameState_ab78c5faec18858b9915daa475c5393fb}} 
+\index{CGameState@{CGameState}!CGameState@{CGameState}}
+\index{CGameState@{CGameState}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{CGameState()}{CGameState()}}
+{\footnotesize\ttfamily C\+Game\+State\+::\+C\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor
+
+initializes key map and setups camera to spawn position 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCGameState_a7601738c3ad88a8438b10d2735c980ff}\label{structCGameState_a7601738c3ad88a8438b10d2735c980ff}} 
+\index{CGameState@{CGameState}!GetProjectionMatrix@{GetProjectionMatrix}}
+\index{GetProjectionMatrix@{GetProjectionMatrix}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{GetProjectionMatrix()}{GetProjectionMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 C\+Game\+State\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for projection matrix
+
+\begin{DoxyReturn}{Returns}
+projection matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCGameState_af3d57782dd67bf7cf578eb2972dc20b4}\label{structCGameState_af3d57782dd67bf7cf578eb2972dc20b4}} 
+\index{CGameState@{CGameState}!GetViewMatrix@{GetViewMatrix}}
+\index{GetViewMatrix@{GetViewMatrix}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{GetViewMatrix()}{GetViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 C\+Game\+State\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for view matrix
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structCCamera}{C\+Camera}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+view matrix according to camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCGameState_a8b29fb43c8439fc6cdd36268cff7f233}\label{structCGameState_a8b29fb43c8439fc6cdd36268cff7f233}} 
+\index{CGameState@{CGameState}!InitializeGame@{InitializeGame}}
+\index{InitializeGame@{InitializeGame}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{InitializeGame()}{InitializeGame()}}
+{\footnotesize\ttfamily void C\+Game\+State\+::\+Initialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes shaders and models
+
+models are setup for the scene rendering 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structCGameState_a58e5b8ddfad137f8987ed0ad7b01b76f}\label{structCGameState_a58e5b8ddfad137f8987ed0ad7b01b76f}} 
+\index{CGameState@{CGameState}!dirLight@{dirLight}}
+\index{dirLight@{dirLight}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{dirLight}{dirLight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCLight}{C\+Light}} C\+Game\+State\+::dir\+Light = \mbox{\hyperlink{HConstants_8h_a64a45b62c7718281dcefec32550f5f07}{D\+A\+Y\+\_\+\+L\+I\+G\+HT}}}
+
+Light of the directional light \mbox{\Hypertarget{structCGameState_a5337651368396d69964ff3cc072333ea}\label{structCGameState_a5337651368396d69964ff3cc072333ea}} 
+\index{CGameState@{CGameState}!light@{light}}
+\index{light@{light}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{light}{light}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCLight}{C\+Light}} C\+Game\+State\+::light = \mbox{\hyperlink{HConstants_8h_a50549b63a241b4b9ae1647a7639f44c7}{C\+A\+M\+P\+F\+I\+R\+E\+\_\+\+L\+I\+G\+HT}}}
+
+Light of the campfire \mbox{\Hypertarget{structCGameState_a26953981eaa322a3daa8e122da3f282b}\label{structCGameState_a26953981eaa322a3daa8e122da3f282b}} 
+\index{CGameState@{CGameState}!MCamera@{MCamera}}
+\index{MCamera@{MCamera}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MCamera}{MCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCCamera}{C\+Camera}} C\+Game\+State\+::\+M\+Camera}
+
+Camera of the scene \mbox{\Hypertarget{structCGameState_a892b2f00cda704434d5967807d2ef842}\label{structCGameState_a892b2f00cda704434d5967807d2ef842}} 
+\index{CGameState@{CGameState}!MCameraControl@{MCameraControl}}
+\index{MCameraControl@{MCameraControl}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MCameraControl}{MCameraControl}}
+{\footnotesize\ttfamily bool C\+Game\+State\+::\+M\+Camera\+Control = true}
+
+Boolean representing if the player is in control of the camera if true -\/ yes if false -\/ no \mbox{\Hypertarget{structCGameState_a0b340835f6604c099ec53984f4d036e0}\label{structCGameState_a0b340835f6604c099ec53984f4d036e0}} 
+\index{CGameState@{CGameState}!MCameraSpline@{MCameraSpline}}
+\index{MCameraSpline@{MCameraSpline}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MCameraSpline}{MCameraSpline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}} C\+Game\+State\+::\+M\+Camera\+Spline = \mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}}(\mbox{\hyperlink{HConstants_8h_a19b9d3199d38f1018bbb7be2059d30a7}{C\+A\+M\+E\+R\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+TS}})}
+
+Spline for the flight view
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCCatmulRomSpline}{C\+Catmul\+Rom\+Spline}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structCGameState_a3f552414e3df0d2976533d4587a7894e}\label{structCGameState_a3f552414e3df0d2976533d4587a7894e}} 
+\index{CGameState@{CGameState}!MDay@{MDay}}
+\index{MDay@{MDay}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MDay}{MDay}}
+{\footnotesize\ttfamily bool C\+Game\+State\+::\+M\+Day = true}
+
+Boolean representing if it is day or night \mbox{\Hypertarget{structCGameState_a29d6f0890a21b2cf78a715d0f8d32ccf}\label{structCGameState_a29d6f0890a21b2cf78a715d0f8d32ccf}} 
+\index{CGameState@{CGameState}!MFreeCamera@{MFreeCamera}}
+\index{MFreeCamera@{MFreeCamera}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MFreeCamera}{MFreeCamera}}
+{\footnotesize\ttfamily bool C\+Game\+State\+::\+M\+Free\+Camera = false}
+
+Boolean wheter camera can be rotated by mouse movements if true -\/ yes if false -\/ noe \mbox{\Hypertarget{structCGameState_a53d1f2d8907448d40209bbc79db0d105}\label{structCGameState_a53d1f2d8907448d40209bbc79db0d105}} 
+\index{CGameState@{CGameState}!MHolding@{MHolding}}
+\index{MHolding@{MHolding}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MHolding}{MHolding}}
+{\footnotesize\ttfamily int C\+Game\+State\+::\+M\+Holding = -\/1}
+
+Item which is being hold
+
+-\/1 -\/ none
+
+depends on initialization of the models \mbox{\Hypertarget{structCGameState_a67ef382a4f6e2bcefc021ee5fa05466a}\label{structCGameState_a67ef382a4f6e2bcefc021ee5fa05466a}} 
+\index{CGameState@{CGameState}!MKeyMap@{MKeyMap}}
+\index{MKeyMap@{MKeyMap}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MKeyMap}{MKeyMap}}
+{\footnotesize\ttfamily bool C\+Game\+State\+::\+M\+Key\+Map\mbox{[}K\+E\+Y\+S\+\_\+\+C\+O\+U\+NT\mbox{]}}
+
+Key map for keyboard input handling \mbox{\Hypertarget{structCGameState_ae5e0080cd7ddd08f331d2ddb170acc5d}\label{structCGameState_ae5e0080cd7ddd08f331d2ddb170acc5d}} 
+\index{CGameState@{CGameState}!MLastFrameTime@{MLastFrameTime}}
+\index{MLastFrameTime@{MLastFrameTime}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MLastFrameTime}{MLastFrameTime}}
+{\footnotesize\ttfamily int C\+Game\+State\+::\+M\+Last\+Frame\+Time = 0}
+
+Help variable for counting time delta. \mbox{\Hypertarget{structCGameState_a674dd7d13bc749e23e31c3bf73c1c228}\label{structCGameState_a674dd7d13bc749e23e31c3bf73c1c228}} 
+\index{CGameState@{CGameState}!MRoot@{MRoot}}
+\index{MRoot@{MRoot}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MRoot}{MRoot}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}}$>$ C\+Game\+State\+::\+M\+Root = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}}$>$()}
+
+Root scene node
+
+holds all models for drawing \mbox{\Hypertarget{structCGameState_a1b027286ff00df5c9d877bc29819ada6}\label{structCGameState_a1b027286ff00df5c9d877bc29819ada6}} 
+\index{CGameState@{CGameState}!MShip@{MShip}}
+\index{MShip@{MShip}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MShip}{MShip}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}}$>$ C\+Game\+State\+::\+M\+Ship = nullptr}
+
+Ship pointer
+
+used for calculating position of the camera during ship view \mbox{\Hypertarget{structCGameState_a6c9ead730570535da59e12ecde86c6f7}\label{structCGameState_a6c9ead730570535da59e12ecde86c6f7}} 
+\index{CGameState@{CGameState}!MSplineTime@{MSplineTime}}
+\index{MSplineTime@{MSplineTime}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MSplineTime}{MSplineTime}}
+{\footnotesize\ttfamily float C\+Game\+State\+::\+M\+Spline\+Time = 0.\+0f}
+
+Time for controling position of the camera during flight view \mbox{\Hypertarget{structCGameState_a294584ee09ddc4c38a4690efd1cbd0ac}\label{structCGameState_a294584ee09ddc4c38a4690efd1cbd0ac}} 
+\index{CGameState@{CGameState}!MTimeDelta@{MTimeDelta}}
+\index{MTimeDelta@{MTimeDelta}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MTimeDelta}{MTimeDelta}}
+{\footnotesize\ttfamily float C\+Game\+State\+::\+M\+Time\+Delta = 0.\+0f}
+
+Current time delta \mbox{\Hypertarget{structCGameState_a46e386ef0763240c7aaf108c24fa8f00}\label{structCGameState_a46e386ef0763240c7aaf108c24fa8f00}} 
+\index{CGameState@{CGameState}!MView@{MView}}
+\index{MView@{MView}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MView}{MView}}
+{\footnotesize\ttfamily int C\+Game\+State\+::\+M\+View = -\/1}
+
+View switch variable
+
+used for switching between views
+
+values\+: -\/1 -\/ spawn position, can be accessed only at the start of the game 0 -\/ static view \#1 1 -\/ static view \#2 2 -\/ static view \#3 3 -\/ flight view 4 -\/ boat view \mbox{\Hypertarget{structCGameState_a6a83c0926c7afffd1c722182b5be53bb}\label{structCGameState_a6a83c0926c7afffd1c722182b5be53bb}} 
+\index{CGameState@{CGameState}!MWindowHeight@{MWindowHeight}}
+\index{MWindowHeight@{MWindowHeight}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MWindowHeight}{MWindowHeight}}
+{\footnotesize\ttfamily int C\+Game\+State\+::\+M\+Window\+Height}
+
+Window height \mbox{\Hypertarget{structCGameState_aad0cf4ca112402cd0db242436ff34130}\label{structCGameState_aad0cf4ca112402cd0db242436ff34130}} 
+\index{CGameState@{CGameState}!MWindowWidth@{MWindowWidth}}
+\index{MWindowWidth@{MWindowWidth}!CGameState@{CGameState}}
+\doxysubsubsection{\texorpdfstring{MWindowWidth}{MWindowWidth}}
+{\footnotesize\ttfamily int C\+Game\+State\+::\+M\+Window\+Width}
+
+Windows width 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CGameState_8h}{C\+Game\+State.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CGameState_8cpp}{C\+Game\+State.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{plane_8cpp}{}\doxysection{/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/plane.cpp File Reference}
+\label{plane_8cpp}\index{/mnt/c/Users/toila/Desktop/PGRIsland/PGRIsland/source/plane.cpp@{/mnt/c/Users/toila/Desktop/PGRIsland/PGRIsland/source/plane.cpp}}
+
+
+Plane data.  
+
+
+{\ttfamily \#include \char`\"{}../include/plane.\+h\char`\"{}}\newline
+Include dependency graph for plane.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{plane_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plane_8cpp_ad3b88bda205092a63e7a747dfe7145fb}\label{plane_8cpp_ad3b88bda205092a63e7a747dfe7145fb}} 
+const int {\bfseries plane\+N\+Attribs\+Per\+Vertex} = 8
+\item 
+\mbox{\Hypertarget{plane_8cpp_a3e85d6adfcf67cf6dde21a96c997bbe1}\label{plane_8cpp_a3e85d6adfcf67cf6dde21a96c997bbe1}} 
+const int {\bfseries plane\+N\+Vertices} = 4
+\item 
+\mbox{\Hypertarget{plane_8cpp_a22f9904383265c8b836752793af661ca}\label{plane_8cpp_a22f9904383265c8b836752793af661ca}} 
+const int {\bfseries plane\+N\+Triangles} = 2
+\item 
+const float {\bfseries plane\+Vertices} \mbox{[}$\,$\mbox{]}
+\item 
+const unsigned {\bfseries plane\+Triangles} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Plane data. 
+
+\begin{DoxyAuthor}{Author}
+Hong Son Ngo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/05/05 Data for drawing a plane 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{plane_8cpp_a55f4197f8ac7a4b119752b89de7b01d2}\label{plane_8cpp_a55f4197f8ac7a4b119752b89de7b01d2}} 
+\index{plane.cpp@{plane.cpp}!planeTriangles@{planeTriangles}}
+\index{planeTriangles@{planeTriangles}!plane.cpp@{plane.cpp}}
+\doxysubsubsection{\texorpdfstring{planeTriangles}{planeTriangles}}
+{\footnotesize\ttfamily const unsigned plane\+Triangles\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  0, 1, 2,}
+\DoxyCodeLine{  0, 2, 3,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{plane_8cpp_a1bbdd1663f48631a26cca59b58ff5998}\label{plane_8cpp_a1bbdd1663f48631a26cca59b58ff5998}} 
+\index{plane.cpp@{plane.cpp}!planeVertices@{planeVertices}}
+\index{planeVertices@{planeVertices}!plane.cpp@{plane.cpp}}
+\doxysubsubsection{\texorpdfstring{planeVertices}{planeVertices}}
+{\footnotesize\ttfamily const float plane\+Vertices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/1.0f,-\/1.0f,0.0f,0.0f,0.0f,1.0f,1.0f,1.0f,}
+\DoxyCodeLine{  1.0f,-\/1.0f,0.0f,0.0f,0.0f,1.0f,0.0f,1.0f,}
+\DoxyCodeLine{  1.0f,1.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,}
+\DoxyCodeLine{  -\/1.0f,1.0f,0.0f,-\/0.0f,0.0f,1.0f,1.0f,0.0f,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

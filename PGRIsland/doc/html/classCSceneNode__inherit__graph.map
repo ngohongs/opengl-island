@@ -1,0 +1,7 @@
+<map id="CSceneNode" name="CSceneNode">
+<area shape="rect" id="node1" title=" " alt="" coords="303,5,502,493"/>
+<area shape="rect" id="node2" href="$classCBillboardSceneNode.html" title=" " alt="" coords="5,541,192,633"/>
+<area shape="rect" id="node3" href="$classCSkyboxSceneNode.html" title=" " alt="" coords="216,541,392,633"/>
+<area shape="rect" id="node4" href="$classCSplineSceneNode.html" title=" " alt="" coords="417,541,586,633"/>
+<area shape="rect" id="node5" href="$classCWaterPlaneSceneNode.html" title=" " alt="" coords="611,541,813,633"/>
+</map>

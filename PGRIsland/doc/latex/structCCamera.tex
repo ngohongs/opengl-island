@@ -1,0 +1,175 @@
+\hypertarget{structCCamera}{}\doxysection{C\+Camera Struct Reference}
+\label{structCCamera}\index{CCamera@{CCamera}}
+
+
+{\ttfamily \#include $<$C\+Camera.\+h$>$}
+
+
+
+Collaboration diagram for C\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structCCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::mat4 \mbox{\hyperlink{structCCamera_a0e64cac5664c1da0c44e5953839d50cd}{Get\+View\+Matrix}} () const
+\item 
+void \mbox{\hyperlink{structCCamera_ae28f2acd21cbb3645123971c1f4c7bc3}{Set\+Camera}} (const glm\+::vec3 \&eye, const glm\+::vec3 \&direction, const glm\+::vec3 \&up\+Vector)
+\item 
+void \mbox{\hyperlink{structCCamera_abc396c08ef69f8d5703c87e2667be175}{Move\+Forward\+Backward}} (const float \&coeficient)
+\item 
+void \mbox{\hyperlink{structCCamera_a6589d85321d2e3d995a20a17f96d51ec}{Move\+Right\+Left}} (const float \&coeficient)
+\item 
+void \mbox{\hyperlink{structCCamera_a4857e4bd24c9c439637af7266d8b47f0}{Pan}} (float angle)
+\item 
+void \mbox{\hyperlink{structCCamera_a414a2443b8d209a53c98818e2e4f277a}{Tilt}} (float angle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structCCamera_aad13cc2282f0fc25a43390f3179b3bc9}{M\+Eye}} = glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{structCCamera_aed587009746875d915ba0e19f53901a6}{M\+Direction}} = glm\+::vec3(0.\+0f, 0.\+0f, -\/1.\+0f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{structCCamera_aefb3503e4afea71d4cc821ac142c93f8}{M\+Up\+Vector}} = glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structCCamera}{C\+Camera}} struct representing camera/player
+
+contains function for getting appropriate view matrix and movement of the camera 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCCamera_a0e64cac5664c1da0c44e5953839d50cd}\label{structCCamera_a0e64cac5664c1da0c44e5953839d50cd}} 
+\index{CCamera@{CCamera}!GetViewMatrix@{GetViewMatrix}}
+\index{GetViewMatrix@{GetViewMatrix}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetViewMatrix()}{GetViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 C\+Camera\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+View matrix getter
+
+creates view matrix for current camera
+
+\begin{DoxyReturn}{Returns}
+view matrix for current camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCCamera_abc396c08ef69f8d5703c87e2667be175}\label{structCCamera_abc396c08ef69f8d5703c87e2667be175}} 
+\index{CCamera@{CCamera}!MoveForwardBackward@{MoveForwardBackward}}
+\index{MoveForwardBackward@{MoveForwardBackward}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MoveForwardBackward()}{MoveForwardBackward()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Move\+Forward\+Backward (\begin{DoxyParamCaption}\item[{const float \&}]{coeficient }\end{DoxyParamCaption})}
+
+Forward and backward movement for the camera
+
+moves the camera in the direction of M\+Direction multiplied by a coeficient
+
+restricts movement in world space, in X and Z axis (-\/X\+Z\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON; X\+Z\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON) and in Y axis (Y\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON; Y\+\_\+\+C\+E\+I\+L\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON)
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{HConstants_8h}{H\+Constants.\+h}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em coeficient} & -\/ coeficient for multiplying the M\+Direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCCamera_a6589d85321d2e3d995a20a17f96d51ec}\label{structCCamera_a6589d85321d2e3d995a20a17f96d51ec}} 
+\index{CCamera@{CCamera}!MoveRightLeft@{MoveRightLeft}}
+\index{MoveRightLeft@{MoveRightLeft}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MoveRightLeft()}{MoveRightLeft()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Move\+Right\+Left (\begin{DoxyParamCaption}\item[{const float \&}]{coeficient }\end{DoxyParamCaption})}
+
+Left and right movement for the cameera
+
+moves the camera in the direction of right vector (cross product of M\+Direction and M\+Up\+Vector) multiplied by a coeficient
+
+restricts movement in world space, in X and Z axis (-\/X\+Z\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON; X\+Z\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON) and in Y axis (Y\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON; Y\+\_\+\+C\+E\+I\+L\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON)
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{HConstants_8h}{H\+Constants.\+h}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em coeficient} & -\/ coeficient for multiplying the right vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCCamera_a4857e4bd24c9c439637af7266d8b47f0}\label{structCCamera_a4857e4bd24c9c439637af7266d8b47f0}} 
+\index{CCamera@{CCamera}!Pan@{Pan}}
+\index{Pan@{Pan}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Pan()}{Pan()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Pan (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Pan function
+
+pans the camera by an angle
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & -\/ panning angle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCCamera_ae28f2acd21cbb3645123971c1f4c7bc3}\label{structCCamera_ae28f2acd21cbb3645123971c1f4c7bc3}} 
+\index{CCamera@{CCamera}!SetCamera@{SetCamera}}
+\index{SetCamera@{SetCamera}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetCamera()}{SetCamera()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Camera (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{eye,  }\item[{const glm\+::vec3 \&}]{direction,  }\item[{const glm\+::vec3 \&}]{up\+Vector }\end{DoxyParamCaption})}
+
+Setter for camera\textquotesingle{}s properties
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & -\/ position of the camera \\
+\hline
+{\em direction} & -\/ direction which the camera looks at \\
+\hline
+{\em up\+Vector} & -\/ up vector to the camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCCamera_a414a2443b8d209a53c98818e2e4f277a}\label{structCCamera_a414a2443b8d209a53c98818e2e4f277a}} 
+\index{CCamera@{CCamera}!Tilt@{Tilt}}
+\index{Tilt@{Tilt}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Tilt()}{Tilt()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Tilt (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Tilt function
+
+tilts the camera by an angle
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & -\/ tilting angle \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structCCamera_aed587009746875d915ba0e19f53901a6}\label{structCCamera_aed587009746875d915ba0e19f53901a6}} 
+\index{CCamera@{CCamera}!MDirection@{MDirection}}
+\index{MDirection@{MDirection}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MDirection}{MDirection}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+M\+Direction = glm\+::vec3(0.\+0f, 0.\+0f, -\/1.\+0f)}
+
+Direction which the camera looks at. \mbox{\Hypertarget{structCCamera_aad13cc2282f0fc25a43390f3179b3bc9}\label{structCCamera_aad13cc2282f0fc25a43390f3179b3bc9}} 
+\index{CCamera@{CCamera}!MEye@{MEye}}
+\index{MEye@{MEye}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MEye}{MEye}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+M\+Eye = glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f)}
+
+Position of the camera \mbox{\Hypertarget{structCCamera_aefb3503e4afea71d4cc821ac142c93f8}\label{structCCamera_aefb3503e4afea71d4cc821ac142c93f8}} 
+\index{CCamera@{CCamera}!MUpVector@{MUpVector}}
+\index{MUpVector@{MUpVector}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MUpVector}{MUpVector}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+M\+Up\+Vector = glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f)}
+
+Up vector for the camera. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CCamera_8h}{C\+Camera.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CCamera_8cpp}{C\+Camera.\+cpp}}\end{DoxyCompactItemize}

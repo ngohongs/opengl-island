@@ -1,0 +1,168 @@
+# Blender MTL File: 'None'
+# Material Count: 15
+
+newmtl Clouds
+Ns 1.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Clouds_baseColor.png
+
+newmtl Island_Grass
+Ns 1.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Island_Grass_baseColor.png
+
+
+newmtl Lava_bubble
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Lava_bubble_baseColor.png
+
+newmtl Ocean
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Ocean_baseColor.png
+
+newmtl Palm_tree_1
+Ns 1024.000
+Ka 1.000000 1.000000 1.000000
+Kd 0.150000 0.620000 0.040000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Palm_tree_1_baseColor.png
+
+newmtl Palm_tree_2
+Ns 1.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Palm_tree_2_baseColor.png
+
+newmtl Pyramid
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Pyramid_baseColor.png
+
+newmtl Tequila_Bottle
+Ns 1200.000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Tequila_Bottle_baseColor.png
+
+newmtl Volacano_Sand
+Ns 128.0000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Volacano_Sand_baseColor.png
+
+newmtl Volcanic_lava
+Ns 1.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.250000 0.000000
+Ks 1.000000 0.460000 0.000000
+Ke 1.000000 1.000000 0.157811
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Volcanic_lava_baseColor.png
+
+newmtl Volcano_Base
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Volcano_Base_baseColor.png
+
+newmtl Volcano_Grass
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Volcano_Grass_baseColor.png
+
+newmtl hammock
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/hammock_baseColor.png
+
+newmtl shrubbery
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/shrubbery_baseColor.png
+
+newmtl skeleton
+Ns 1.609970
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.850000 0.850000 0.850000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/skeleton_baseColor.png

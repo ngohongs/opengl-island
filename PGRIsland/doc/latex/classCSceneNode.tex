@@ -1,0 +1,682 @@
+\hypertarget{classCSceneNode}{}\doxysection{C\+Scene\+Node Class Reference}
+\label{classCSceneNode}\index{CSceneNode@{CSceneNode}}
+
+
+{\ttfamily \#include $<$C\+Scene\+Node.\+h$>$}
+
+
+
+Inheritance diagram for C\+Scene\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCSceneNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Scene\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCSceneNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCSceneNode_aedcc6238998cd434179c58e3d8ad3d4a}{C\+Scene\+Node}} ()=default
+\item 
+\mbox{\hyperlink{classCSceneNode_a2c9ccc6cf8ceee1d46f375671e47450e}{C\+Scene\+Node}} (const \mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} \&program)
+\item 
+virtual \mbox{\hyperlink{classCSceneNode_ab23c7a27ac0d01b4d0535e99f762b3da}{$\sim$\+C\+Scene\+Node}} ()=default
+\item 
+void \mbox{\hyperlink{classCSceneNode_ae176e571ccf7042e0c67f11418a2f5c0}{Destroy}} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ $>$ \& \mbox{\hyperlink{classCSceneNode_a34693634cb298a84276848d308aa9e05}{Get\+Scene\+Nodes}} ()
+\item 
+virtual void \mbox{\hyperlink{classCSceneNode_a12e77d2875504420ded9349d6573422c}{Update}} (const float \&delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classCSceneNode_a9c5d7dcd292f3aa6fb4186aafe0ec4b6}{Draw}} ()
+\item 
+glm\+::mat4 \mbox{\hyperlink{classCSceneNode_abb87e00be925d46e3048497965b3e761}{Get\+Model\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_a74c3278e6204a02e2d58f809361cfab7}{Load\+Texture\+Scene\+Node}} (const std\+::string \&file, const G\+Lenum \&type, const bool \&clamp=false)
+\item 
+void \mbox{\hyperlink{classCSceneNode_a5213eb782116250c0685b7c59801dddd}{Load\+Scene\+Node}} (const std\+::string \&file)
+\item 
+void \mbox{\hyperlink{classCSceneNode_ab7d1f26c884d156442267e26cb3a6ca1}{Load\+Scene\+Node}} (const int \&attributes\+Count, const int \&vertices\+Count, const int \&triangles\+Count, const float $\ast$vertex\+Attributes, const unsigned int $\ast$indicies)
+\item 
+void \mbox{\hyperlink{classCSceneNode_a1811bccdebc577d71071a505925578ab}{Push\+Scene\+Node}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ \&node)
+\item 
+void \mbox{\hyperlink{classCSceneNode_ab187470686ae975d969cda10dee1d263}{Set\+Position}} (const glm\+::vec3 \&position)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_a3703e81393003a8ffd6829201971f777}{Get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_afec634cb098e5a78bd2c0d968883ad76}{Set\+Size}} (const glm\+::vec3 \&scale)
+\item 
+void \mbox{\hyperlink{classCSceneNode_a74377cfe58e7404638af1831e9816914}{Set\+Direction}} (const glm\+::vec3 \&direction)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_a1961a8af72b2ae3a6d867b9c98abca19}{Get\+Direction}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_a2e34ff2712dbf9e12ddc3fb3306d4402}{Set\+Up\+Vector}} (const glm\+::vec3 \&up\+Vector)
+\item 
+void \mbox{\hyperlink{classCSceneNode_a4d9a69dbd992e450a1a515689be7bf97}{Set\+Pickable}} (const bool \&pickable)
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a50607d018f1e2d3238b639110ebf6dd0}{Get\+Pickable}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_ab207c30a7c93ffc2b275ad27936b2ecb}{Set\+Picked}} (const bool \&picked)
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a487ae7680f65338409643ff241395306}{Switch\+Picked}} ()
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a7d6056f2e3c022264b2f88abeaba3946}{Get\+On}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_aa8003b7046a68967a3697191a779a5a4}{Set\+On}} (const bool \&on)
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a09006eed88f261368dec8f47191f7625}{Switch\+On}} ()
+\item 
+void \mbox{\hyperlink{classCSceneNode_ad63707e93ece3016d67e93420c967978}{Set\+Time\+To\+Live}} (const float \&time)
+\item 
+void \mbox{\hyperlink{classCSceneNode_a3ebdce5b99e91f51b1b8789ede8460d9}{Set\+Collision}} (const bool \&collision)
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a3220f202caa4e68f7920df2c44f10f74}{Check\+Collision}} (const glm\+::vec3 \&position, const glm\+::vec3 size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCSceneNode_a1613161d45566a23ceac2c2d70e78af1}{Load\+Scene\+Node}} (ai\+Mesh $\ast$mesh, const ai\+Scene $\ast$scene)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structCTexture}{C\+Texture}} $>$ \mbox{\hyperlink{classCSceneNode_a6125c31d868aebe4029350b31d652264}{Load\+Material\+Textures}} (ai\+Material $\ast$mat, ai\+Texture\+Type type)
+\item 
+void \mbox{\hyperlink{classCSceneNode_ab71d6f0ab11cc21489d5ccca55285b30}{Process\+Scene\+Node}} (ai\+Node $\ast$node, const ai\+Scene $\ast$scene)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ \mbox{\hyperlink{classCSceneNode_afdef65aec0a5b1480fed5ced50d10e5b}{Create\+Child\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a20bca1f386e08fd491e18387f6f3355d}{Is\+On}} = true
+\item 
+std\+::string \mbox{\hyperlink{classCSceneNode_a440c6a486518f70740eea43cdd8d04ff}{M\+Directory}} = \char`\"{}\char`\"{}
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a3ed3b5d499d1ca7d0a686d5e5192528c}{Is\+Pickable}} = false
+\item 
+bool \mbox{\hyperlink{classCSceneNode_af0dccb7fee738de74a0092c5e3b4e272}{Is\+Picked}} = false
+\item 
+bool \mbox{\hyperlink{classCSceneNode_a5f733884f7e5fcbb158c76d7fee09d27}{M\+Collision}} = false
+\item 
+\mbox{\hyperlink{classCMeshGeometry}{C\+Mesh\+Geometry}} \mbox{\hyperlink{classCSceneNode_a1e946cd9cb44864ed0374fc7eb1ba9b9}{M\+Mesh}}
+\item 
+\mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} \mbox{\hyperlink{classCSceneNode_a71a8f4cae4ce7043da77d00e2ca9062b}{M\+Shader\+Program}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ $>$ \mbox{\hyperlink{classCSceneNode_ad34919e5414017c1fd8a9bfa656e5138}{M\+Scene\+Nodes}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_a70d31333bef3c01f0a198d59c96e4191}{M\+Position}} = glm\+::vec3(0.\+0f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_a7d81f8aa574738c293a11308a64f394a}{M\+Size}} = glm\+::vec3(1.\+0f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_ada87f28e799b98d88595c41158aa55c8}{M\+Direction}} = glm\+::vec3(0.\+0f, 0.\+0f, -\/1.\+0f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCSceneNode_a32bc367cca6b5acc2d50d237369ec148}{M\+Up\+Vector}} = glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f)
+\item 
+float \mbox{\hyperlink{classCSceneNode_aee53e31a1e49eb79ec798644b253a0a9}{M\+Time}} = 0.\+0f
+\item 
+bool \mbox{\hyperlink{classCSceneNode_aca35a7e7aea1b31c806d602a6c15c55a}{M\+Time\+Set}} = false
+\item 
+float \mbox{\hyperlink{classCSceneNode_a54aff0f835fb0b9e07486a72e8f20c34}{M\+Time\+To\+Live}} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+General scene node/object to be drawn to the window
+
+handles size, position, direction, interaction reaction of the object, object\textquotesingle{}s geometry is loaded through A\+S\+S\+I\+MP loader or through P\+GR\textquotesingle{}s Blender exporter files 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCSceneNode_aedcc6238998cd434179c58e3d8ad3d4a}\label{classCSceneNode_aedcc6238998cd434179c58e3d8ad3d4a}} 
+\index{CSceneNode@{CSceneNode}!CSceneNode@{CSceneNode}}
+\index{CSceneNode@{CSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{CSceneNode()}{CSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Scene\+Node\+::\+C\+Scene\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor
+
+does not represent an object but a place holder of nodes \mbox{\Hypertarget{classCSceneNode_a2c9ccc6cf8ceee1d46f375671e47450e}\label{classCSceneNode_a2c9ccc6cf8ceee1d46f375671e47450e}} 
+\index{CSceneNode@{CSceneNode}!CSceneNode@{CSceneNode}}
+\index{CSceneNode@{CSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{CSceneNode()}{CSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Scene\+Node\+::\+C\+Scene\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} \&}]{program }\end{DoxyParamCaption})}
+
+Constructor for an object
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & -\/ program used for drawing the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ab23c7a27ac0d01b4d0535e99f762b3da}\label{classCSceneNode_ab23c7a27ac0d01b4d0535e99f762b3da}} 
+\index{CSceneNode@{CSceneNode}!````~CSceneNode@{$\sim$CSceneNode}}
+\index{````~CSceneNode@{$\sim$CSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSceneNode()}{~CSceneNode()}}
+{\footnotesize\ttfamily virtual C\+Scene\+Node\+::$\sim$\+C\+Scene\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSceneNode_a3220f202caa4e68f7920df2c44f10f74}\label{classCSceneNode_a3220f202caa4e68f7920df2c44f10f74}} 
+\index{CSceneNode@{CSceneNode}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{CheckCollision()}{CheckCollision()}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Check\+Collision (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position,  }\item[{const glm\+::vec3}]{size }\end{DoxyParamCaption})}
+
+Method that checks whether the object collides with object passed by parameters
+
+collisions are calculated as spherical collisions
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & -\/ position of the other object that collision should be checked with \\
+\hline
+{\em size} & -\/ size of the the other object that collision should be checked with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true if collsion is found else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_afdef65aec0a5b1480fed5ced50d10e5b}\label{classCSceneNode_afdef65aec0a5b1480fed5ced50d10e5b}} 
+\index{CSceneNode@{CSceneNode}!CreateChildNode@{CreateChildNode}}
+\index{CreateChildNode@{CreateChildNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{CreateChildNode()}{CreateChildNode()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ C\+Scene\+Node\+::\+Create\+Child\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Method for creating child nodes to the current node
+
+child node inherits M\+Directory, M\+Postion, M\+Size, M\+Direction of the parent node
+
+\begin{DoxyReturn}{Returns}
+child node of the caller 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_ae176e571ccf7042e0c67f11418a2f5c0}\label{classCSceneNode_ae176e571ccf7042e0c67f11418a2f5c0}} 
+\index{CSceneNode@{CSceneNode}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deinitializer of a node
+
+destroys mesh of a node \mbox{\Hypertarget{classCSceneNode_a9c5d7dcd292f3aa6fb4186aafe0ec4b6}\label{classCSceneNode_a9c5d7dcd292f3aa6fb4186aafe0ec4b6}} 
+\index{CSceneNode@{CSceneNode}!Draw@{Draw}}
+\index{Draw@{Draw}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw method
+
+draws object to the screen 
+
+Reimplemented in \mbox{\hyperlink{classCSkyboxSceneNode_a99a7d1e94bc4a0a3c2e82264b4b9ce99}{C\+Skybox\+Scene\+Node}}, \mbox{\hyperlink{classCWaterPlaneSceneNode_ac5b1f51befcb9857cc0e4e8d13dd0763}{C\+Water\+Plane\+Scene\+Node}}, and \mbox{\hyperlink{classCBillboardSceneNode_a19fffc9cbb98f2919b5cb678a2271b8b}{C\+Billboard\+Scene\+Node}}.
+
+\mbox{\Hypertarget{classCSceneNode_a1961a8af72b2ae3a6d867b9c98abca19}\label{classCSceneNode_a1961a8af72b2ae3a6d867b9c98abca19}} 
+\index{CSceneNode@{CSceneNode}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of the node\textquotesingle{}s direction
+
+\begin{DoxyReturn}{Returns}
+direction of the node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_abb87e00be925d46e3048497965b3e761}\label{classCSceneNode_abb87e00be925d46e3048497965b3e761}} 
+\index{CSceneNode@{CSceneNode}!GetModelMatrix@{GetModelMatrix}}
+\index{GetModelMatrix@{GetModelMatrix}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetModelMatrix()}{GetModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 C\+Scene\+Node\+::\+Get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Model matrix getter
+
+creates a model matrix for the objects, takes into account M\+Position, M\+Size, M\+Direction of the object
+
+\begin{DoxyReturn}{Returns}
+mat4 model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a7d6056f2e3c022264b2f88abeaba3946}\label{classCSceneNode_a7d6056f2e3c022264b2f88abeaba3946}} 
+\index{CSceneNode@{CSceneNode}!GetOn@{GetOn}}
+\index{GetOn@{GetOn}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetOn()}{GetOn()}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Get\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of Is\+On member variable
+
+\begin{DoxyReturn}{Returns}
+Is\+On 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a50607d018f1e2d3238b639110ebf6dd0}\label{classCSceneNode_a50607d018f1e2d3238b639110ebf6dd0}} 
+\index{CSceneNode@{CSceneNode}!GetPickable@{GetPickable}}
+\index{GetPickable@{GetPickable}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetPickable()}{GetPickable()}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Get\+Pickable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of M\+Pickable
+
+\begin{DoxyReturn}{Returns}
+M\+Pickable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a3703e81393003a8ffd6829201971f777}\label{classCSceneNode_a3703e81393003a8ffd6829201971f777}} 
+\index{CSceneNode@{CSceneNode}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of the node\textquotesingle{}s position
+
+\begin{DoxyReturn}{Returns}
+nodes position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a34693634cb298a84276848d308aa9e05}\label{classCSceneNode_a34693634cb298a84276848d308aa9e05}} 
+\index{CSceneNode@{CSceneNode}!GetSceneNodes@{GetSceneNodes}}
+\index{GetSceneNodes@{GetSceneNodes}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{GetSceneNodes()}{GetSceneNodes()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ $>$ \& C\+Scene\+Node\+::\+Get\+Scene\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter of the child nodes
+
+\begin{DoxyReturn}{Returns}
+refrence to child nodes vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a6125c31d868aebe4029350b31d652264}\label{classCSceneNode_a6125c31d868aebe4029350b31d652264}} 
+\index{CSceneNode@{CSceneNode}!LoadMaterialTextures@{LoadMaterialTextures}}
+\index{LoadMaterialTextures@{LoadMaterialTextures}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{LoadMaterialTextures()}{LoadMaterialTextures()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structCTexture}{C\+Texture}} $>$ C\+Scene\+Node\+::\+Load\+Material\+Textures (\begin{DoxyParamCaption}\item[{ai\+Material $\ast$}]{mat,  }\item[{ai\+Texture\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Help method for loading meshes\textquotesingle{} textures
+
+loads texture files and converts them to C\+Textures for drawing
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & -\/ material of the mesh that holds the texture\textquotesingle{}s path \\
+\hline
+{\em type} & -\/ type of the texture to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of textures for the object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a1613161d45566a23ceac2c2d70e78af1}\label{classCSceneNode_a1613161d45566a23ceac2c2d70e78af1}} 
+\index{CSceneNode@{CSceneNode}!LoadSceneNode@{LoadSceneNode}}
+\index{LoadSceneNode@{LoadSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{LoadSceneNode()}{LoadSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Load\+Scene\+Node (\begin{DoxyParamCaption}\item[{ai\+Mesh $\ast$}]{mesh,  }\item[{const ai\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Help method for loading objects geometry
+
+loads mesh geometry represented in A\+S\+S\+I\+MP\textquotesingle{}s format and converts it into \mbox{\hyperlink{classCMeshGeometry}{C\+Mesh\+Geometry}}
+
+loads vertices\textquotesingle{}s position, normals, texture coordinates, material and diffuse texture
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCMeshGeometry}{C\+Mesh\+Geometry}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & -\/ mesh geometry given by A\+S\+S\+I\+MP to be converted to program\textquotesingle{}s mesh representation \\
+\hline
+{\em scene} & -\/ scene of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ab7d1f26c884d156442267e26cb3a6ca1}\label{classCSceneNode_ab7d1f26c884d156442267e26cb3a6ca1}} 
+\index{CSceneNode@{CSceneNode}!LoadSceneNode@{LoadSceneNode}}
+\index{LoadSceneNode@{LoadSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{LoadSceneNode()}{LoadSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Load\+Scene\+Node (\begin{DoxyParamCaption}\item[{const int \&}]{attributes\+Count,  }\item[{const int \&}]{vertices\+Count,  }\item[{const int \&}]{triangles\+Count,  }\item[{const float $\ast$}]{vertex\+Attributes,  }\item[{const unsigned int $\ast$}]{indicies }\end{DoxyParamCaption})}
+
+Object loader
+
+loads object with P\+GR\textquotesingle{}s Blender plugin export parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes\+Count} & -\/ number of attributes of a vertex \\
+\hline
+{\em vertices\+Count} & -\/ number of vertices \\
+\hline
+{\em triangles\+Count} & -\/ number of triangles \\
+\hline
+{\em vertex\+Attributes} & -\/ array containing vertex attributes in this order (x, y, z, nx, ny, nz, ts, tt) where the first three attributes are x,y,z coordinates of a vertex, second three attributes are x,y,z coordinates of a vertex and last two attributes are its texturing coordinates \\
+\hline
+{\em indicies} & -\/ array of indicies representing a triangle in the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a5213eb782116250c0685b7c59801dddd}\label{classCSceneNode_a5213eb782116250c0685b7c59801dddd}} 
+\index{CSceneNode@{CSceneNode}!LoadSceneNode@{LoadSceneNode}}
+\index{LoadSceneNode@{LoadSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{LoadSceneNode()}{LoadSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Load\+Scene\+Node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file }\end{DoxyParamCaption})}
+
+Object loader
+
+loads object through A\+S\+S\+I\+MP\textquotesingle{}s interface
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & -\/ path to the object\textquotesingle{}s file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a74c3278e6204a02e2d58f809361cfab7}\label{classCSceneNode_a74c3278e6204a02e2d58f809361cfab7}} 
+\index{CSceneNode@{CSceneNode}!LoadTextureSceneNode@{LoadTextureSceneNode}}
+\index{LoadTextureSceneNode@{LoadTextureSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{LoadTextureSceneNode()}{LoadTextureSceneNode()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Load\+Texture\+Scene\+Node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file,  }\item[{const G\+Lenum \&}]{type,  }\item[{const bool \&}]{clamp = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Texture loader
+
+loads texture to the current node
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & -\/ path to the texture \\
+\hline
+{\em type} & -\/ type of the texture \\
+\hline
+{\em clamp} & -\/ whether should the texture be clamped for banners \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ab71d6f0ab11cc21489d5ccca55285b30}\label{classCSceneNode_ab71d6f0ab11cc21489d5ccca55285b30}} 
+\index{CSceneNode@{CSceneNode}!ProcessSceneNode@{ProcessSceneNode}}
+\index{ProcessSceneNode@{ProcessSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{ProcessSceneNode()}{ProcessSceneNode()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Process\+Scene\+Node (\begin{DoxyParamCaption}\item[{ai\+Node $\ast$}]{node,  }\item[{const ai\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Help method for loading meshes
+
+navigates in A\+S\+S\+I\+MP\textquotesingle{}s structure and loads each node\textquotesingle{}s mesh goes through all node\textquotesingle{}s in scene recursively
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & -\/ A\+S\+S\+I\+MP node that would be loaded and its child nodes would be processed \\
+\hline
+{\em scene} & -\/ scene of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a1811bccdebc577d71071a505925578ab}\label{classCSceneNode_a1811bccdebc577d71071a505925578ab}} 
+\index{CSceneNode@{CSceneNode}!PushSceneNode@{PushSceneNode}}
+\index{PushSceneNode@{PushSceneNode}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{PushSceneNode()}{PushSceneNode()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Push\+Scene\+Node (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})}
+
+Push method to the M\+Scene\+Nodes
+
+pushes a node into M\+Scene\+Nodes
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & -\/ node that would be added to M\+Scene\+Nodes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a3ebdce5b99e91f51b1b8789ede8460d9}\label{classCSceneNode_a3ebdce5b99e91f51b1b8789ede8460d9}} 
+\index{CSceneNode@{CSceneNode}!SetCollision@{SetCollision}}
+\index{SetCollision@{SetCollision}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetCollision()}{SetCollision()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Collision (\begin{DoxyParamCaption}\item[{const bool \&}]{collision }\end{DoxyParamCaption})}
+
+Setter for M\+Collision
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & -\/ true if collision should be checked else false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a74377cfe58e7404638af1831e9816914}\label{classCSceneNode_a74377cfe58e7404638af1831e9816914}} 
+\index{CSceneNode@{CSceneNode}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption})}
+
+Setter for node\textquotesingle{}s direction
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & -\/ direction which the node should face \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_aa8003b7046a68967a3697191a779a5a4}\label{classCSceneNode_aa8003b7046a68967a3697191a779a5a4}} 
+\index{CSceneNode@{CSceneNode}!SetOn@{SetOn}}
+\index{SetOn@{SetOn}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetOn()}{SetOn()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+On (\begin{DoxyParamCaption}\item[{const bool \&}]{on }\end{DoxyParamCaption})}
+
+Setter for Is\+On
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & -\/ true if the object is to be drawn else false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a4d9a69dbd992e450a1a515689be7bf97}\label{classCSceneNode_a4d9a69dbd992e450a1a515689be7bf97}} 
+\index{CSceneNode@{CSceneNode}!SetPickable@{SetPickable}}
+\index{SetPickable@{SetPickable}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetPickable()}{SetPickable()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Pickable (\begin{DoxyParamCaption}\item[{const bool \&}]{pickable }\end{DoxyParamCaption})}
+
+Setter for M\+Pickable
+
+
+\begin{DoxyParams}{Parameters}
+{\em pickable} & -\/ true if the node is pickable else false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ab207c30a7c93ffc2b275ad27936b2ecb}\label{classCSceneNode_ab207c30a7c93ffc2b275ad27936b2ecb}} 
+\index{CSceneNode@{CSceneNode}!SetPicked@{SetPicked}}
+\index{SetPicked@{SetPicked}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetPicked()}{SetPicked()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Picked (\begin{DoxyParamCaption}\item[{const bool \&}]{picked }\end{DoxyParamCaption})}
+
+Setter for M\+Picked
+
+
+\begin{DoxyParams}{Parameters}
+{\em picked} & -\/ true if the object is picked else false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ab187470686ae975d969cda10dee1d263}\label{classCSceneNode_ab187470686ae975d969cda10dee1d263}} 
+\index{CSceneNode@{CSceneNode}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
+
+Setter for node\textquotesingle{}s position
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & -\/ position to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_afec634cb098e5a78bd2c0d968883ad76}\label{classCSceneNode_afec634cb098e5a78bd2c0d968883ad76}} 
+\index{CSceneNode@{CSceneNode}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{scale }\end{DoxyParamCaption})}
+
+Setter for the node\textquotesingle{}s size
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & -\/ scale vector for the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_ad63707e93ece3016d67e93420c967978}\label{classCSceneNode_ad63707e93ece3016d67e93420c967978}} 
+\index{CSceneNode@{CSceneNode}!SetTimeToLive@{SetTimeToLive}}
+\index{SetTimeToLive@{SetTimeToLive}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetTimeToLive()}{SetTimeToLive()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Time\+To\+Live (\begin{DoxyParamCaption}\item[{const float \&}]{time }\end{DoxyParamCaption})}
+
+Setter for M\+Time\+To\+Live
+
+sets the duration for how long should the object be drawn
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ the duration of drawing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a2e34ff2712dbf9e12ddc3fb3306d4402}\label{classCSceneNode_a2e34ff2712dbf9e12ddc3fb3306d4402}} 
+\index{CSceneNode@{CSceneNode}!SetUpVector@{SetUpVector}}
+\index{SetUpVector@{SetUpVector}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SetUpVector()}{SetUpVector()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Set\+Up\+Vector (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{up\+Vector }\end{DoxyParamCaption})}
+
+Setter for the node\textquotesingle{}s up vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em up\+Vector} & -\/ new up vector of the node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCSceneNode_a09006eed88f261368dec8f47191f7625}\label{classCSceneNode_a09006eed88f261368dec8f47191f7625}} 
+\index{CSceneNode@{CSceneNode}!SwitchOn@{SwitchOn}}
+\index{SwitchOn@{SwitchOn}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SwitchOn()}{SwitchOn()}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Switch\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Switch for Is\+On
+
+switches Is\+On
+
+\begin{DoxyReturn}{Returns}
+switched Is\+On value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a487ae7680f65338409643ff241395306}\label{classCSceneNode_a487ae7680f65338409643ff241395306}} 
+\index{CSceneNode@{CSceneNode}!SwitchPicked@{SwitchPicked}}
+\index{SwitchPicked@{SwitchPicked}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{SwitchPicked()}{SwitchPicked()}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Switch\+Picked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Switch for M\+Picked.
+
+switches M\+Picked
+
+\begin{DoxyReturn}{Returns}
+switched M\+Picked value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSceneNode_a12e77d2875504420ded9349d6573422c}\label{classCSceneNode_a12e77d2875504420ded9349d6573422c}} 
+\index{CSceneNode@{CSceneNode}!Update@{Update}}
+\index{Update@{Update}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Scene\+Node\+::\+Update (\begin{DoxyParamCaption}\item[{const float \&}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update method
+
+updates objects M\+Time
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & -\/ delta\+Time that would be added to M\+Time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classCSplineSceneNode_ae5089c2aeb85eab2828a4dbb39bfa8e4}{C\+Spline\+Scene\+Node}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCSceneNode_a20bca1f386e08fd491e18387f6f3355d}\label{classCSceneNode_a20bca1f386e08fd491e18387f6f3355d}} 
+\index{CSceneNode@{CSceneNode}!IsOn@{IsOn}}
+\index{IsOn@{IsOn}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{IsOn}{IsOn}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Is\+On = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean for checking whether the node should be drawn \mbox{\Hypertarget{classCSceneNode_a3ed3b5d499d1ca7d0a686d5e5192528c}\label{classCSceneNode_a3ed3b5d499d1ca7d0a686d5e5192528c}} 
+\index{CSceneNode@{CSceneNode}!IsPickable@{IsPickable}}
+\index{IsPickable@{IsPickable}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{IsPickable}{IsPickable}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Is\+Pickable = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean showing whether the object is pickable \mbox{\Hypertarget{classCSceneNode_af0dccb7fee738de74a0092c5e3b4e272}\label{classCSceneNode_af0dccb7fee738de74a0092c5e3b4e272}} 
+\index{CSceneNode@{CSceneNode}!IsPicked@{IsPicked}}
+\index{IsPicked@{IsPicked}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{IsPicked}{IsPicked}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+Is\+Picked = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean showing whether the object is picked \mbox{\Hypertarget{classCSceneNode_a5f733884f7e5fcbb158c76d7fee09d27}\label{classCSceneNode_a5f733884f7e5fcbb158c76d7fee09d27}} 
+\index{CSceneNode@{CSceneNode}!MCollision@{MCollision}}
+\index{MCollision@{MCollision}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MCollision}{MCollision}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+M\+Collision = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean if collision with camera is set. \mbox{\Hypertarget{classCSceneNode_ada87f28e799b98d88595c41158aa55c8}\label{classCSceneNode_ada87f28e799b98d88595c41158aa55c8}} 
+\index{CSceneNode@{CSceneNode}!MDirection@{MDirection}}
+\index{MDirection@{MDirection}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MDirection}{MDirection}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+M\+Direction = glm\+::vec3(0.\+0f, 0.\+0f, -\/1.\+0f)\hspace{0.3cm}{\ttfamily [protected]}}
+
+Direction which the object faces \mbox{\Hypertarget{classCSceneNode_a440c6a486518f70740eea43cdd8d04ff}\label{classCSceneNode_a440c6a486518f70740eea43cdd8d04ff}} 
+\index{CSceneNode@{CSceneNode}!MDirectory@{MDirectory}}
+\index{MDirectory@{MDirectory}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MDirectory}{MDirectory}}
+{\footnotesize\ttfamily std\+::string C\+Scene\+Node\+::\+M\+Directory = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Directory of the object\textquotesingle{}s file, used for A\+S\+S\+I\+MP \mbox{\Hypertarget{classCSceneNode_a1e946cd9cb44864ed0374fc7eb1ba9b9}\label{classCSceneNode_a1e946cd9cb44864ed0374fc7eb1ba9b9}} 
+\index{CSceneNode@{CSceneNode}!MMesh@{MMesh}}
+\index{MMesh@{MMesh}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MMesh}{MMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCMeshGeometry}{C\+Mesh\+Geometry}} C\+Scene\+Node\+::\+M\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mesh geometry of the object \mbox{\Hypertarget{classCSceneNode_a70d31333bef3c01f0a198d59c96e4191}\label{classCSceneNode_a70d31333bef3c01f0a198d59c96e4191}} 
+\index{CSceneNode@{CSceneNode}!MPosition@{MPosition}}
+\index{MPosition@{MPosition}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MPosition}{MPosition}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+M\+Position = glm\+::vec3(0.\+0f)\hspace{0.3cm}{\ttfamily [protected]}}
+
+Position of the object \mbox{\Hypertarget{classCSceneNode_ad34919e5414017c1fd8a9bfa656e5138}\label{classCSceneNode_ad34919e5414017c1fd8a9bfa656e5138}} 
+\index{CSceneNode@{CSceneNode}!MSceneNodes@{MSceneNodes}}
+\index{MSceneNodes@{MSceneNodes}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MSceneNodes}{MSceneNodes}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classCSceneNode}{C\+Scene\+Node}}$>$ $>$ C\+Scene\+Node\+::\+M\+Scene\+Nodes\hspace{0.3cm}{\ttfamily [protected]}}
+
+If the object consists of multiple meshes, they would be stored in M\+Scene\+Nodes \mbox{\Hypertarget{classCSceneNode_a71a8f4cae4ce7043da77d00e2ca9062b}\label{classCSceneNode_a71a8f4cae4ce7043da77d00e2ca9062b}} 
+\index{CSceneNode@{CSceneNode}!MShaderProgram@{MShaderProgram}}
+\index{MShaderProgram@{MShaderProgram}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MShaderProgram}{MShaderProgram}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCShaderProgram}{C\+Shader\+Program}} C\+Scene\+Node\+::\+M\+Shader\+Program\hspace{0.3cm}{\ttfamily [protected]}}
+
+Shader used for drawing the object \mbox{\Hypertarget{classCSceneNode_a7d81f8aa574738c293a11308a64f394a}\label{classCSceneNode_a7d81f8aa574738c293a11308a64f394a}} 
+\index{CSceneNode@{CSceneNode}!MSize@{MSize}}
+\index{MSize@{MSize}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MSize}{MSize}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+M\+Size = glm\+::vec3(1.\+0f)\hspace{0.3cm}{\ttfamily [protected]}}
+
+Size of the object \mbox{\Hypertarget{classCSceneNode_aee53e31a1e49eb79ec798644b253a0a9}\label{classCSceneNode_aee53e31a1e49eb79ec798644b253a0a9}} 
+\index{CSceneNode@{CSceneNode}!MTime@{MTime}}
+\index{MTime@{MTime}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MTime}{MTime}}
+{\footnotesize\ttfamily float C\+Scene\+Node\+::\+M\+Time = 0.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+Time of the object \mbox{\Hypertarget{classCSceneNode_aca35a7e7aea1b31c806d602a6c15c55a}\label{classCSceneNode_aca35a7e7aea1b31c806d602a6c15c55a}} 
+\index{CSceneNode@{CSceneNode}!MTimeSet@{MTimeSet}}
+\index{MTimeSet@{MTimeSet}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MTimeSet}{MTimeSet}}
+{\footnotesize\ttfamily bool C\+Scene\+Node\+::\+M\+Time\+Set = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Boolean showing wheter the object has time to live. \mbox{\Hypertarget{classCSceneNode_a54aff0f835fb0b9e07486a72e8f20c34}\label{classCSceneNode_a54aff0f835fb0b9e07486a72e8f20c34}} 
+\index{CSceneNode@{CSceneNode}!MTimeToLive@{MTimeToLive}}
+\index{MTimeToLive@{MTimeToLive}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MTimeToLive}{MTimeToLive}}
+{\footnotesize\ttfamily float C\+Scene\+Node\+::\+M\+Time\+To\+Live = 0.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+Duration the object can be drawn \mbox{\Hypertarget{classCSceneNode_a32bc367cca6b5acc2d50d237369ec148}\label{classCSceneNode_a32bc367cca6b5acc2d50d237369ec148}} 
+\index{CSceneNode@{CSceneNode}!MUpVector@{MUpVector}}
+\index{MUpVector@{MUpVector}!CSceneNode@{CSceneNode}}
+\doxysubsubsection{\texorpdfstring{MUpVector}{MUpVector}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Scene\+Node\+::\+M\+Up\+Vector = glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f)\hspace{0.3cm}{\ttfamily [protected]}}
+
+Up vector the object 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CSceneNode_8h}{C\+Scene\+Node.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CSceneNode_8cpp}{C\+Scene\+Node.\+cpp}}\end{DoxyCompactItemize}

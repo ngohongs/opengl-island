@@ -1,0 +1,104 @@
+\hypertarget{classCCatmulRomSpline}{}\doxysection{C\+Catmul\+Rom\+Spline Class Reference}
+\label{classCCatmulRomSpline}\index{CCatmulRomSpline@{CCatmulRomSpline}}
+
+
+{\ttfamily \#include $<$C\+Catmul\+Rom\+Spline.\+h$>$}
+
+
+
+Collaboration diagram for C\+Catmul\+Rom\+Spline\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classCCatmulRomSpline__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCCatmulRomSpline_a2204360a13ffbba9c41dfdf56aff27eb}{C\+Catmul\+Rom\+Spline}} (const std\+::vector$<$ glm\+::vec3 $>$ \&control\+Points)
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCCatmulRomSpline_a3737c5d83b357cac3866d8b4fdf80da2}{Get\+Spline\+Loop\+Point}} (float t) const
+\item 
+glm\+::vec3 \mbox{\hyperlink{classCCatmulRomSpline_adbcbb3172d05822149f6e4c91f329204}{Get\+Spline\+Loop\+Gradient}} (float t) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classCCatmulRomSpline_a262f05cf86fc658b3b8a2d58d4075506}{Get\+Control\+Point\+Size}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a Catmul-\/\+Rom spline
+
+spline is considered as loop 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCCatmulRomSpline_a2204360a13ffbba9c41dfdf56aff27eb}\label{classCCatmulRomSpline_a2204360a13ffbba9c41dfdf56aff27eb}} 
+\index{CCatmulRomSpline@{CCatmulRomSpline}!CCatmulRomSpline@{CCatmulRomSpline}}
+\index{CCatmulRomSpline@{CCatmulRomSpline}!CCatmulRomSpline@{CCatmulRomSpline}}
+\doxysubsubsection{\texorpdfstring{CCatmulRomSpline()}{CCatmulRomSpline()}}
+{\footnotesize\ttfamily C\+Catmul\+Rom\+Spline\+::\+C\+Catmul\+Rom\+Spline (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ glm\+::vec3 $>$ \&}]{control\+Points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for a Catmull-\/\+Rom spline
+
+
+\begin{DoxyParams}{Parameters}
+{\em control\+Points} & -\/ control\+Points of the spline \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCCatmulRomSpline_a262f05cf86fc658b3b8a2d58d4075506}\label{classCCatmulRomSpline_a262f05cf86fc658b3b8a2d58d4075506}} 
+\index{CCatmulRomSpline@{CCatmulRomSpline}!GetControlPointSize@{GetControlPointSize}}
+\index{GetControlPointSize@{GetControlPointSize}!CCatmulRomSpline@{CCatmulRomSpline}}
+\doxysubsubsection{\texorpdfstring{GetControlPointSize()}{GetControlPointSize()}}
+{\footnotesize\ttfamily size\+\_\+t C\+Catmul\+Rom\+Spline\+::\+Get\+Control\+Point\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for the size of M\+Control\+Points
+
+\begin{DoxyReturn}{Returns}
+number of M\+Controlpoints 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCCatmulRomSpline_adbcbb3172d05822149f6e4c91f329204}\label{classCCatmulRomSpline_adbcbb3172d05822149f6e4c91f329204}} 
+\index{CCatmulRomSpline@{CCatmulRomSpline}!GetSplineLoopGradient@{GetSplineLoopGradient}}
+\index{GetSplineLoopGradient@{GetSplineLoopGradient}!CCatmulRomSpline@{CCatmulRomSpline}}
+\doxysubsubsection{\texorpdfstring{GetSplineLoopGradient()}{GetSplineLoopGradient()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Catmul\+Rom\+Spline\+::\+Get\+Spline\+Loop\+Gradient (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption}) const}
+
+Method for getting the gradient
+
+gives gradient that the object moving on the spline should face at time t
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ time for retrieving the gradient\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+3D vector of the direction which the moving object should face 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCCatmulRomSpline_a3737c5d83b357cac3866d8b4fdf80da2}\label{classCCatmulRomSpline_a3737c5d83b357cac3866d8b4fdf80da2}} 
+\index{CCatmulRomSpline@{CCatmulRomSpline}!GetSplineLoopPoint@{GetSplineLoopPoint}}
+\index{GetSplineLoopPoint@{GetSplineLoopPoint}!CCatmulRomSpline@{CCatmulRomSpline}}
+\doxysubsubsection{\texorpdfstring{GetSplineLoopPoint()}{GetSplineLoopPoint()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Catmul\+Rom\+Spline\+::\+Get\+Spline\+Loop\+Point (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption}) const}
+
+Method for getting the position
+
+gives position depending on the time
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ time for retrieving the position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+3D vector of the position at the time t 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CCatmulRomSpline_8h}{C\+Catmul\+Rom\+Spline.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CCatmulRomSpline_8cpp}{C\+Catmul\+Rom\+Spline.\+cpp}}\end{DoxyCompactItemize}

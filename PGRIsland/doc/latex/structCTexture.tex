@@ -1,0 +1,125 @@
+\hypertarget{structCTexture}{}\doxysection{C\+Texture Struct Reference}
+\label{structCTexture}\index{CTexture@{CTexture}}
+
+
+{\ttfamily \#include $<$C\+Texture.\+h$>$}
+
+
+
+Collaboration diagram for C\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{structCTexture__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCTexture_a5f740aeac7fa8d51aefa3fa070488849}{C\+Texture}} ()=default
+\item 
+\mbox{\hyperlink{structCTexture_a17591faa3964fd5f67e6f18c45aece85}{C\+Texture}} (const std\+::string \&path, const G\+Lenum \&type, const bool \&clamp=false)
+\item 
+\mbox{\hyperlink{structCTexture_a59740eb126bea7143d03358a1d417593}{C\+Texture}} (const std\+::vector$<$ std\+::string $>$ \&faces)
+\item 
+void \mbox{\hyperlink{structCTexture_ac21ddef57aff7f43cd5f8d123463a372}{Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structCTexture_a271402b31795cb9c60e04fcae3507075}{M\+Initialized}} = false
+\item 
+G\+Luint \mbox{\hyperlink{structCTexture_a4a2b396687a1c2863a50487570bdee7d}{M\+ID}}
+\item 
+G\+Lenum \mbox{\hyperlink{structCTexture_aa36cf7013123106ba9e4cd41d1286f44}{M\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct representing a texture 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structCTexture_a5f740aeac7fa8d51aefa3fa070488849}\label{structCTexture_a5f740aeac7fa8d51aefa3fa070488849}} 
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{CTexture()}{CTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+Texture\+::\+C\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor
+
+creates an unintialized texture \mbox{\Hypertarget{structCTexture_a17591faa3964fd5f67e6f18c45aece85}\label{structCTexture_a17591faa3964fd5f67e6f18c45aece85}} 
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{CTexture()}{CTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+Texture\+::\+C\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const G\+Lenum \&}]{type,  }\item[{const bool \&}]{clamp = {\ttfamily false} }\end{DoxyParamCaption})}
+
+General constructor
+
+creates a texture with image located in \textquotesingle{}path\textquotesingle{} and type \textquotesingle{}type\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ path to an image \\
+\hline
+{\em type} & -\/ Open\+GL texture type \\
+\hline
+{\em wrap} & -\/ whether the texture should be clamped for banners \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCTexture_a59740eb126bea7143d03358a1d417593}\label{structCTexture_a59740eb126bea7143d03358a1d417593}} 
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\index{CTexture@{CTexture}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{CTexture()}{CTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+Texture\+::\+C\+Texture (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{faces }\end{DoxyParamCaption})}
+
+Cubemap constructor
+
+create a cubemap texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em faces} & -\/ paths for each faces of the cubemap.
+\begin{DoxyItemize}
+\item faces are loaded in this order right, left, up, down, back, front of the cubemap 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCTexture_ac21ddef57aff7f43cd5f8d123463a372}\label{structCTexture_ac21ddef57aff7f43cd5f8d123463a372}} 
+\index{CTexture@{CTexture}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void C\+Texture\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroy a texture
+
+deletes Open\+GL\textquotesingle{}s abstraction from memory 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structCTexture_a4a2b396687a1c2863a50487570bdee7d}\label{structCTexture_a4a2b396687a1c2863a50487570bdee7d}} 
+\index{CTexture@{CTexture}!MID@{MID}}
+\index{MID@{MID}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{MID}{MID}}
+{\footnotesize\ttfamily G\+Luint C\+Texture\+::\+M\+ID}
+
+Open\+GL identifier of the texture \mbox{\Hypertarget{structCTexture_a271402b31795cb9c60e04fcae3507075}\label{structCTexture_a271402b31795cb9c60e04fcae3507075}} 
+\index{CTexture@{CTexture}!MInitialized@{MInitialized}}
+\index{MInitialized@{MInitialized}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{MInitialized}{MInitialized}}
+{\footnotesize\ttfamily bool C\+Texture\+::\+M\+Initialized = false}
+
+Boolean for checking if the texture is initialized \mbox{\Hypertarget{structCTexture_aa36cf7013123106ba9e4cd41d1286f44}\label{structCTexture_aa36cf7013123106ba9e4cd41d1286f44}} 
+\index{CTexture@{CTexture}!MType@{MType}}
+\index{MType@{MType}!CTexture@{CTexture}}
+\doxysubsubsection{\texorpdfstring{MType}{MType}}
+{\footnotesize\ttfamily G\+Lenum C\+Texture\+::\+M\+Type}
+
+Type of the texture 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/include/\mbox{\hyperlink{CTexture_8h}{C\+Texture.\+h}}\item 
+/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/\mbox{\hyperlink{CTexture_8cpp}{C\+Texture.\+cpp}}\end{DoxyCompactItemize}

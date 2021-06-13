@@ -1,0 +1,94 @@
+\hypertarget{planeOrtho_8cpp}{}\doxysection{/mnt/c/\+Users/toila/\+Desktop/\+P\+G\+R\+Island/\+P\+G\+R\+Island/source/plane\+Ortho.cpp File Reference}
+\label{planeOrtho_8cpp}\index{/mnt/c/Users/toila/Desktop/PGRIsland/PGRIsland/source/planeOrtho.cpp@{/mnt/c/Users/toila/Desktop/PGRIsland/PGRIsland/source/planeOrtho.cpp}}
+
+
+Orthogonal plane data.  
+
+
+{\ttfamily \#include \char`\"{}../include/plane\+Ortho.\+h\char`\"{}}\newline
+Include dependency graph for plane\+Ortho.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{planeOrtho_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{planeOrtho_8cpp_a6841e7ddaf670c618846873a6c01d598}\label{planeOrtho_8cpp_a6841e7ddaf670c618846873a6c01d598}} 
+const int {\bfseries plane\+Ortho\+N\+Attribs\+Per\+Vertex} = 8
+\item 
+\mbox{\Hypertarget{planeOrtho_8cpp_a8acfce0be66e215799eec7b87f1a20d8}\label{planeOrtho_8cpp_a8acfce0be66e215799eec7b87f1a20d8}} 
+const int {\bfseries plane\+Ortho\+N\+Vertices} = 4
+\item 
+\mbox{\Hypertarget{planeOrtho_8cpp_a617ba46ca34c59218dc1e6e499b476f7}\label{planeOrtho_8cpp_a617ba46ca34c59218dc1e6e499b476f7}} 
+const int {\bfseries plane\+Ortho\+N\+Triangles} = 2
+\item 
+const float {\bfseries plane\+Ortho\+Vertices} \mbox{[}$\,$\mbox{]}
+\item 
+const float {\bfseries plane\+Ortho\+Banner\+Vertices} \mbox{[}$\,$\mbox{]}
+\item 
+const unsigned {\bfseries plane\+Ortho\+Triangles} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Orthogonal plane data. 
+
+\begin{DoxyAuthor}{Author}
+Hong Son Ngo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/05/05 Data for drawing an orthogonal plane 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{planeOrtho_8cpp_a91c90adbfafd070d738c658dc87bc948}\label{planeOrtho_8cpp_a91c90adbfafd070d738c658dc87bc948}} 
+\index{planeOrtho.cpp@{planeOrtho.cpp}!planeOrthoBannerVertices@{planeOrthoBannerVertices}}
+\index{planeOrthoBannerVertices@{planeOrthoBannerVertices}!planeOrtho.cpp@{planeOrtho.cpp}}
+\doxysubsubsection{\texorpdfstring{planeOrthoBannerVertices}{planeOrthoBannerVertices}}
+{\footnotesize\ttfamily const float plane\+Ortho\+Banner\+Vertices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{ 0.0f,-\/1.0f,-\/1.0f,0.0f,0.0f,1.0f,40.0f,1.0f,}
+\DoxyCodeLine{ 0.0f, 1.0f,-\/1.0f,0.0f,0.0f,1.0f,40.0f,0.0f,}
+\DoxyCodeLine{ 0.0f, 1.0f,1.0f,0.0f,0.0f,1.0f,0.0f,0.0f,}
+\DoxyCodeLine{ 0.0f,-\/1.0f,1.0f,-\/0.0f,0.0f,1.0f,0.0f,1.0f,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{planeOrtho_8cpp_a84e30267d9c6b710bbed5255fbfedbb9}\label{planeOrtho_8cpp_a84e30267d9c6b710bbed5255fbfedbb9}} 
+\index{planeOrtho.cpp@{planeOrtho.cpp}!planeOrthoTriangles@{planeOrthoTriangles}}
+\index{planeOrthoTriangles@{planeOrthoTriangles}!planeOrtho.cpp@{planeOrtho.cpp}}
+\doxysubsubsection{\texorpdfstring{planeOrthoTriangles}{planeOrthoTriangles}}
+{\footnotesize\ttfamily const unsigned plane\+Ortho\+Triangles\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  0, 1, 2,}
+\DoxyCodeLine{  0, 2, 3,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{planeOrtho_8cpp_aa9d9bc1d59c35213831c3a01d181e6bd}\label{planeOrtho_8cpp_aa9d9bc1d59c35213831c3a01d181e6bd}} 
+\index{planeOrtho.cpp@{planeOrtho.cpp}!planeOrthoVertices@{planeOrthoVertices}}
+\index{planeOrthoVertices@{planeOrthoVertices}!planeOrtho.cpp@{planeOrtho.cpp}}
+\doxysubsubsection{\texorpdfstring{planeOrthoVertices}{planeOrthoVertices}}
+{\footnotesize\ttfamily const float plane\+Ortho\+Vertices\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{ 0.0f,-\/1.0f,-\/1.0f,0.0f,0.0f,1.0f,1.0f,1.0f,}
+\DoxyCodeLine{ 0.0f, 1.0f,-\/1.0f,0.0f,0.0f,1.0f,1.0f,0.0f,}
+\DoxyCodeLine{ 0.0f, 1.0f,1.0f,0.0f,0.0f,1.0f,0.0f,0.0f,}
+\DoxyCodeLine{ 0.0f,-\/1.0f,1.0f,-\/0.0f,0.0f,1.0f,0.0f,1.0f,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
