@@ -1,5 +1,7 @@
 # Island
 
+https://user-images.githubusercontent.com/56195457/121942027-4db94f80-cd50-11eb-9e82-036848c9a450.mp4
+
 ## Dependencies
 
 PGR-Framework is required for the application to run. Framework can be download [here](https://cent.felk.cvut.cz/courses/PGR/framework/). To properly install the framework please follow guide about setting up environment variables in Windows 7 [here](https://cent.felk.cvut.cz/courses/PGR/framework/doc/en_setup.html).
