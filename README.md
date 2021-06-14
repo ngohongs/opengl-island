@@ -1,7 +1,30 @@
+# Island
+
+## Dependencies
+
+PGR-Framework is required for the application to run. Framework can be download [here](https://cent.felk.cvut.cz/courses/PGR/framework/). To properly install the framework please follow guide about setting up environment variables in Windows 7 [here](https://cent.felk.cvut.cz/courses/PGR/framework/doc/en_setup.html).
+
+## Control
+
+* Camera controls:
+	* arrow : tilt/pan of the camera
+	* wsad : movement forward/backward/left/right
+	* c : toggle for mouse camera control 
+* Scene controls:
+	* f : switch between scene views
+	* r : switch to night time
+	* esc : end scene program
+	* 
+
+User is able to interact with items in the scene. User can pickup the bucket or the torch along the campfire with a mouse click. While holding the bucket user is able to put out the campfire and while holding the torch user can fire the campfire or fire from the cannon nearby. To release held items click anywhere on the ground.
+
+## Project
+
+To compilation can be done in Visual Studio or the precompiled version can be download [here](https://cent.felk.cvut.cz/courses/PGR/archives/2020-2021/S-FIT/ngohongs/code/windows.zip). Note that even with precompiled version PGR-Framework mentioned above is required for the application to run.
+
 # Ostrov
 
 Scéna ostrova je pojata jako svět s nízkým počtem polygonů. Většina objektů je tedy hranatá a vede k nereálné projekci světa.
-
 
 Uživatel se ocitne jako trosečník na opuštěném sopečném ostrově. Na ostrově nebyl trosečník jako první. Důkazem toho jsou kamenné domy, pyramida na břehu nebo kostra v jeskyňi. Počasí trosečníkovi moc nepřeje je dost oblačno a nejspíš se blíží bouřka, což jde vidět jak na obloze, tak i z vln moře. Kolem ostrova pluje dost ryb na uživení jedno a v dáli je vidět loď, která by mohla trosečníka zachránit z tohoto pustého ostrova.
 
