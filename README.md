@@ -14,7 +14,6 @@ PGR-Framework is required for the application to run. Framework can be download 
 	* f : switch between scene views
 	* r : switch to night time
 	* esc : end scene program
-	* 
 
 User is able to interact with items in the scene. User can pickup the bucket or the torch along the campfire with a mouse click. While holding the bucket user is able to put out the campfire and while holding the torch user can fire the campfire or fire from the cannon nearby. To release held items click anywhere on the ground.
 
